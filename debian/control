@@ -1,0 +1,34 @@
+Source: node-css
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Leo Iannacone <l3on@ubuntu.com>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , mocha
+ , node-expect.js
+ , node-inherits
+ , node-should
+ , node-source-map
+ , node-source-map-resolve
+ , dh-sequence-nodejs
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-css
+Vcs-Git: https://salsa.debian.org/js-team/node-css.git
+Homepage: https://github.com/reworkcss/css
+Rules-Requires-Root: no
+
+Package: node-css
+Architecture: all
+Depends: ${misc:Depends}
+ , node-inherits
+ , node-source-map
+ , node-source-map-resolve
+ , nodejs
+Description: JavaScript CSS parser and stringifier - Node.js module
+ This module provides a CSS parser in JavaScript, able to make
+ stylesheet rules available as JavaScript object, and a CSS
+ stringifier which takes an abstract syntax tree from parser and
+ outputs a CSS-formatted string.
+ .
+ Node.js is an event-based server-side JavaScript engine.

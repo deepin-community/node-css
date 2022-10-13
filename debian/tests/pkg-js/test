@@ -1,0 +1,1 @@
+mocha -C --require should --reporter spec --bail test/*.js
